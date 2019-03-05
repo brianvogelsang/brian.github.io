@@ -14,16 +14,16 @@ function getWeather() {
       longitude;
     showOut.innerHTML =
       "<p>Latitude is " +
-      latitude +
+      Math.floor(latitude) +
       "° <br>Longitude is " +
-      longitude +
+      Math.floor(longitude) +
       "°</p>";
     ///API call below this line ////
     $.getJSON(url, function(data) {
       document.getElementById("weatherInsert").innerHTML =
-        "The weather is: " +
+        "The weather is: [" +
         data.weather[0].main +
-        ", " +
+        "], " +
         data.weather[0].description;
       document.getElementById("temp").innerHTML =
         "Temperature is: °" + data.main.temp + " Celsius";

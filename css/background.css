@@ -2,17 +2,34 @@ body {
     background-image: url(../img/pencil.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
-    overflow:scroll;
-    background-size: cover;
+    overflow:hidden;
+    background-size:cover;
     background-color:#dedede;
 }
 
 #headDiv {
+    display: block;
+    width: 100px;
     font-family:serif;
-	width: 100px;
-	padding: 1px 5px 5px 25px;
+	font-size: 72px;
+	padding: 20px;
 	background-color: white;
-    border-radius: 25px;
-    margin: 0px 0px 10px 0px;
-    
+    border-radius: 25px;   
+    text-align: center;
+    box-shadow: 10px 10px rgba(159, 200, 255, 0.19);
+    }
+
+#headDiv:link {
+    text-decoration: none;
+                
 }
+#headDiv:visited {
+    text-decoration: none;
+                
+}
+#headDiv:hover {
+    text-decoration: underline;
+    color:skyblue;
+    box-shadow: 10px 10px skyblue;
+}
+

@@ -8,10 +8,27 @@ img {
 }
 
 #headDiv {
+    display: block;
+    width: 100px;
     font-family:serif;
-	width: 100px;
-	padding: 1px 5px 5px 25px;
+	font-size: 72px;
+	padding: 20px;
+    border-radius: 25px;   
+    text-align: center;
+    box-shadow: 10px 10px rgba(159, 200, 255, 0.19);
 	background-color: #ffc06b;
-    border-radius: 25px;
-    margin: 0px 0px 10px 0px;
+ 
+}
+#headDiv:link {
+    text-decoration: none;
+                
+}
+#headDiv:visited {
+    text-decoration: none;
+                
+}
+#headDiv:hover {
+    text-decoration: underline;
+    color:red;
+    box-shadow: 10px 10px red;
 }
