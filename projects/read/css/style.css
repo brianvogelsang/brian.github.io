@@ -82,3 +82,18 @@ iframe {
     height: 270px;
     background-color: #a88615;
 }
+
+#JungleRoomStartBtn {
+    display: block;
+}
+
+#JungleRoomStopBtn {
+    display:none;
+}
+#LibraryRoomStartBtn {
+    display: block;
+}
+
+#LibraryRoomStopBtn {
+    display:none;
+}
