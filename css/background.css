@@ -1,0 +1,18 @@
+body {
+    background-image: url(../img/pencil.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    overflow:scroll;
+    background-size: cover;
+    background-color:#dedede;
+}
+
+#headDiv {
+    font-family:serif;
+	width: 100px;
+	padding: 1px 5px 5px 25px;
+	background-color: white;
+    border-radius: 25px;
+    margin: 0px 0px 10px 0px;
+    
+}

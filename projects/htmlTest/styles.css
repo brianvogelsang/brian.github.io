@@ -1,0 +1,17 @@
+
+body {
+    background-color: #ffaf44;
+}
+
+img {
+	border-radius:25px;
+}
+
+#headDiv {
+    font-family:serif;
+	width: 100px;
+	padding: 1px 5px 5px 25px;
+	background-color: #ffc06b;
+    border-radius: 25px;
+    margin: 0px 0px 10px 0px;
+}
