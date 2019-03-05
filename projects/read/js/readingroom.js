@@ -33,12 +33,14 @@ library.pause();
     
 rain.loop = true;
 rain.volume =0.2;
+rain.muted = false;
 rain.autoplay = true;
 rain.play();
 rain.controls =true;
     
 fire.loop = true;
 fire.volume =0.35;
+fire.muted = false;
 fire.autoplay = true;
 fire.play();    
 fire.controls = true;
@@ -57,7 +59,8 @@ rain.pause();
 fire.pause();
     
 library.loop = true;
-library.volume =0.7;
+library.volume =0.5;
+library.muted =false;
 library.autoplay = true;
 library.play();
 library.controls =true;
