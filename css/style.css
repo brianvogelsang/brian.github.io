@@ -1,6 +1,6 @@
 #brianProfile{
     max-height: 500px;
-    height: 45vh;
+    height: 40vmin;
     margin: 20px;
     border-style: solid;
     border-width: thick;
@@ -72,6 +72,7 @@ body{
     padding: 15px;
     border-radius:15px;
     width: 45vw;
+    min-width: 265px;
     font-size: 72px;
     box-shadow: 10px 10px; 
     color:white;
