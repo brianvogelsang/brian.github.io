@@ -1,11 +1,11 @@
 #brianProfile{
-    height: 500px;
+    max-height: 500px;
+    height: 45vh;
     margin: 20px;
     border-style: solid;
     border-width: thick;
     border-radius: 15px;
     display: inline-block;
-    position: fixed;
     
 }
 
@@ -67,17 +67,14 @@ body{
 
 #projectHome {
     display: inline-block;
-    position: fixed;
     text-align: center;
     background-color: #a7a7a7;
     padding: 15px;
     border-radius:15px;
-    width: 500px;
+    width: 45vw;
     font-size: 72px;
     box-shadow: 10px 10px; 
     color:white;
-    left: 400px;
-    top: 200px;
     
 }
     
