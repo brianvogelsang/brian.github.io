@@ -33,6 +33,9 @@
     <button onclick='getFizzBuzz();' class=myButtons id=fizzBuzzButton style='display:none;' >Click to FIZZBUZZ!</button>
        <!-- Button to Return to Start-->
     <button onclick='reset();' class=myButtons id=resetButton style='display:none;' >Click to Reset!</button>
+     <!-- Button to Display Code-->
+    <button onclick='showCode();' class=myButtons id=showCodeButton style='display:none;' >Click to Show Code!</button>
+    
     
     <!-- This div will show the printout-->
     <div id=printOut>
@@ -41,6 +44,8 @@
     When you 'Buzz' the list, it will transform all numbers divisible by 5 to 'Buzz.'<br>
     When you 'FizzBuzz' the list, it will do both together.
     </div>
+    
+    <iframe id=myCode width=1600 height=1080 src="js/fizzbuzz.js"></iframe>
     
 </body>
 

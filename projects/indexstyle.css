@@ -1,11 +1,16 @@
-.blueLink, .redLink {
+div {
     display: block;
+    width: 95vw;
+}
+
+.blueLink, .redLink {
+    display: inline-block;
+    width: 200px;
     text-align: center;
-    margin:5px;
+    margin: 10px 5px 10px 5px;
     background-color: #a7a7a7;
     padding: 15px;
     border-radius:15px;
-    width: 200px;
     font-size: 16px;
     box-shadow: 10px 10px; 
     
