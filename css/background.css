@@ -5,6 +5,7 @@ body {
     overflow:hidden;
     background-size:cover;
     background-color:#dedede;
+    min-height: 100%;
 }
 
 #headDiv {
