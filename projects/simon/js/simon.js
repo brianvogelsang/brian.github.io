@@ -94,14 +94,16 @@ function clickA(){
         clickCounter = clickCounter + 1;
         sequenceCount = sequenceCount + 1;
         if (clickCounter>=currentSequence.length) {
+            disableButtons();
             setTimeout(StartSequence, 1500);}
     }
     else {
-        error.volume =.2;
-        error.currentTime=0;
-        error.play();
+       errorFunction();
+
+    
+}   
     }
-}
+
 function clickB(){
      var B = document.getElementById('B');
      var blueBox = document.getElementById('blueBtn');
@@ -116,12 +118,11 @@ function clickB(){
         clickCounter = clickCounter + 1;
         sequenceCount = sequenceCount + 1;
         if (clickCounter>=currentSequence.length) {
+            disableButtons();
             setTimeout(StartSequence, 1500);}
     }
     else {
-        error.volume =.2;
-        error.currentTime=0;
-        error.play();
+        errorFunction();
     }
 }
 
@@ -140,14 +141,14 @@ function clickC(){
         clickCounter = clickCounter + 1;
         sequenceCount = sequenceCount + 1;
         if (clickCounter>=currentSequence.length) {
+            disableButtons();
             setTimeout(StartSequence, 1500);}
     }
     else {
-        error.volume =.2;
-        error.currentTime=0;
-        error.play();
+      errorFunction();
     }
 }
+
 function clickD(){
     var D = document.getElementById('D');
     var redBox = document.getElementById('redBtn');
@@ -162,12 +163,11 @@ function clickD(){
         clickCounter = clickCounter + 1;
         sequenceCount = sequenceCount + 1;
         if (clickCounter>=currentSequence.length) {
+            disableButtons();
             setTimeout(StartSequence, 1500);}
     }
     else {
-        error.volume =.2;
-        error.currentTime=0;
-        error.play();
+        errorFunction();
     }
     
     var debug = document.getElementById('debug');
@@ -196,7 +196,7 @@ function greenColorChange(){
 function StartSequence(){
     
     disableButtons();
-    setTimeout(enableButtons, (2000));
+    setTimeout(enableButtons, (currentSequence.length * 500));
     
     clickCounter = 0;
     
@@ -221,7 +221,8 @@ function StartSequence(){
         
     }
     
-    
+ 
+ 
     
     
    // var debug = document.getElementById('debug');
@@ -248,6 +249,18 @@ function enableButtons() {
     redBox.disabled = false;
     greenBox.disabled = false;
     
+}
+
+function errorFunction(){
+        error.volume =.2;
+        error.currentTime=0;
+        error.play();
+        disableButtons();
+        currentSequence = [];
+        sequenceCount = 0;
+        clickCounter = 0;
+    
+        setTimeout(StartSequence, 1500);
 }
 
     
